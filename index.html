@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritik Rupam Nanda | AI/ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>RRN<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#certifications" class="nav-link">Certs</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-fade">Hello, World. I'm</p>
+        <h1 class="hero-name reveal-up">
+          <span>Ritik</span>
+          <span class="name-accent">Rupam</span>
+          <span>Nanda</span>
+        </h1>
+        <div class="hero-roles reveal-fade">
+          <span class="role-prefix">I am a </span>
+          <span class="typing-wrapper">
+            <span class="typing-text" id="typingText"></span>
+            <span class="cursor-blink">|</span>
+          </span>
+        </div>
+        <p class="hero-bio reveal-fade">
+          Passionate AI/ML engineer building intelligent systems that push the boundary
+          of what machines can perceive, learn, and create.
+        </p>
+        <div class="hero-ctas reveal-up">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="assets/CV.pdf" target="_blank" class="btn btn-secondary">
+    <i class="fas fa-download"></i> Resume
+</a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fas fa-paper-plane"></i> Contact
+          </a>
+        </div>
+        <div class="hero-socials reveal-fade">
+          <!-- ⬇️ REPLACE href with your actual LinkedIn URL -->
+          <a href="https://www.linkedin.com/in/ritik-rupam-nanda-44a85832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <!-- ⬇️ REPLACE href with your actual GitHub URL -->
+          <a href="https://github.com/Ritikrupam" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- ⬇️ REPLACE with your actual email -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ritikrupamnanda@gmail.com" target="_blank" class="social-icon" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+</a>
+        </div>
+      </div>
+      <div class="hero-image reveal-fade">
+        <div class="image-frame">
+          <div class="image-glow"></div>
+          <div class="image-ring ring-1"></div>
+          <div class="image-ring ring-2"></div>
+          <!-- ⬇️ REPLACE src with your actual profile image path, e.g., "assets/profile.jpg" -->
+          <img src="profile.jpg" alt="Ritik Rupam Nanda" class="profile-img">
+          <div class="image-badge">
+            <i class="fas fa-brain"></i>
+            <span>AI Researcher</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">The Mind Behind<br/><span class="gradient-text">The Machine</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm an <strong>AI/ML Engineer</strong> and researcher currently pursuing my <strong>B.Tech in Computer Science (AI & ML)</strong> at <strong>Centurion University of Technology and Management, Odisha</strong>  with a CGPA of <strong>8.44 / 10.0</strong>.
+          </p>
+          <p>
+            My work lives at the intersection of deep learning, computer vision, NLP, and systems security — where I build models that don't just perform, but <em>explain themselves</em>.
+          </p>
+          <p>
+            I'm driven by the challenge of making AI trustworthy, interpretable, and impactful — from detecting deepfakes to protecting networks from tunneling attacks using entropy-based ML pipelines.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="8.44">0</span>
+              <span class="stat-label">CGPA / 10</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="4" data-suffix="+">0</span>
+              <span class="stat-label">AI Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="99" data-suffix="%">0</span>
+              <span class="stat-label">Model Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-timeline reveal-right">
+          <h3 class="timeline-title">Education & Journey</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2023 – 2027</span>
+                <h4>B.Tech — Computer Science (AI & ML)</h4>
+                <p>Centurion University of Technology and Management, Odisha</p>
+                <span class="timeline-badge">CGPA: 8.44</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h4>Data Science & ML Intern</h4>
+                <p>Prodigy InfoTech, Mumbai</p>
+                <span class="timeline-badge">Industry</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">Ongoing</span>
+                <h4>AI Researcher</h4>
+                <p>Deepfakes · DNS Security · Satellite Imaging</p>
+                <span class="timeline-badge">Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills" id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-category reveal-fade">
+          <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="95"><span>Python</span><div class="pill-bar"><div class="pill-fill" style="--target:95%"></div></div></div>
+            <div class="skill-pill" data-level="80"><span>Java</span><div class="pill-bar"><div class="pill-fill" style="--target:80%"></div></div></div>
+            <div class="skill-pill" data-level="75"><span>JavaScript</span><div class="pill-bar"><div class="pill-fill" style="--target:75%"></div></div></div>
+            <div class="skill-pill" data-level="70"><span>SQL</span><div class="pill-bar"><div class="pill-fill" style="--target:70%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-fade">
+          <h3 class="category-title"><i class="fas fa-brain"></i> AI / ML</h3>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="90"><span>Machine Learning</span><div class="pill-bar"><div class="pill-fill" style="--target:90%"></div></div></div>
+            <div class="skill-pill" data-level="88"><span>Deep Learning</span><div class="pill-bar"><div class="pill-fill" style="--target:88%"></div></div></div>
+            <div class="skill-pill" data-level="85"><span>TensorFlow / Keras</span><div class="pill-bar"><div class="pill-fill" style="--target:85%"></div></div></div>
+            <div class="skill-pill" data-level="82"><span>Scikit-learn</span><div class="pill-bar"><div class="pill-fill" style="--target:82%"></div></div></div>
+            <div class="skill-pill" data-level="80"><span>XGBoost</span><div class="pill-bar"><div class="pill-fill" style="--target:80%"></div></div></div>
+            <div class="skill-pill" data-level="78"><span>Computer Vision</span><div class="pill-bar"><div class="pill-fill" style="--target:78%"></div></div></div>
+            <div class="skill-pill" data-level="75"><span>NLP</span><div class="pill-bar"><div class="pill-fill" style="--target:75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-fade">
+          <h3 class="category-title"><i class="fas fa-layer-group"></i> Web & Tools</h3>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="80"><span>React.js</span><div class="pill-bar"><div class="pill-fill" style="--target:80%"></div></div></div>
+            <div class="skill-pill" data-level="78"><span>HTML / CSS</span><div class="pill-bar"><div class="pill-fill" style="--target:78%"></div></div></div>
+            <div class="skill-pill" data-level="70"><span>Database Mgmt</span><div class="pill-bar"><div class="pill-fill" style="--target:70%"></div></div></div>
+            <div class="skill-pill" data-level="85"><span>DSA</span><div class="pill-bar"><div class="pill-fill" style="--target:85%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills-icons-row reveal-fade">
+        <div class="skill-icon-badge"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-icon-badge"><i class="fas fa-robot"></i><span>TensorFlow</span></div>
+        <div class="skill-icon-badge"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="skill-icon-badge"><i class="fas fa-database"></i><span>SQL</span></div>
+        <div class="skill-icon-badge"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-icon-badge"><i class="fas fa-eye"></i><span>CV</span></div>
+        <div class="skill-icon-badge"><i class="fas fa-language"></i><span>NLP</span></div>
+        <div class="skill-icon-badge"><i class="fab fa-js"></i><span>JavaScript</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects" id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project A -->
+        <div class="project-card reveal-up" data-tilt>
+          <div class="project-img">
+            <div class="project-overlay"></div>
+            <div class="project-icon"><i class="fas fa-heart-pulse"></i></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">SUKHIFY</h3>
+            <p class="project-subtitle">Workplace Mental Health Assistant</p>
+            <p class="project-desc">Built an MVP mental health support platform featuring mood tracking, psychiatrist booking, and AI-powered emotion analysis with scalable backend and responsive frontend.</p>
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">IBM Watson NLU</span>
+            </div>
+            <div class="project-links">
+              <!-- ⬇️ REPLACE href with actual GitHub repo link -->
+              <a href="https://github.com/your-github/sukhify" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="proj-btn proj-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project B -->
+        <div class="project-card reveal-up" data-tilt>
+          <div class="project-img proj-cyan">
+            <div class="project-overlay"></div>
+            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">DNS Tunneling Detection</h3>
+            <p class="project-subtitle">Predictive Anomaly Detection System</p>
+            <p class="project-desc">Designed an anomaly detection system for DNS tunneling attacks using entropy and traffic-based features. Achieved 99%+ accuracy using ML and deep learning models.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">TPOT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/dns-tunneling" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="proj-btn proj-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project C -->
+        <div class="project-card reveal-up" data-tilt>
+          <div class="project-img proj-purple">
+            <div class="project-overlay"></div>
+            <div class="project-icon"><i class="fas fa-magnifying-glass"></i></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">DeepLens</h3>
+            <p class="project-subtitle">Interpretable Deepfake Detection</p>
+            <p class="project-desc">Developed a multi-task deepfake detection system with manipulation localization and interpretability using Grad-CAM++, enabling visual explanation of model decisions.</p>
+            <div class="project-tags">
+              <span class="tag">Xception</span>
+              <span class="tag">Grad-CAM++</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/deeplens" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="proj-btn proj-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project D -->
+        <div class="project-card reveal-up" data-tilt>
+          <div class="project-img proj-green">
+            <div class="project-overlay"></div>
+            <div class="project-icon"><i class="fas fa-satellite"></i></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Disaster Damage Assessment</h3>
+            <p class="project-subtitle">Satellite Imagery Segmentation</p>
+            <p class="project-desc">Built deep learning segmentation pipelines for disaster-affected building detection using satellite imagery and the xBD dataset with U-Net and VGG16 architectures.</p>
+            <div class="project-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+              <span class="tag">U-Net</span>
+              <span class="tag">VGG16</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/disaster-assessment" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="proj-btn proj-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section experience" id="experience">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">04 / Experience</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="exp-timeline reveal-up">
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-period">May 2025 – Jul 2025</div>
+            <div class="exp-dot-line">
+              <div class="exp-dot"></div>
+              <div class="exp-line"></div>
+            </div>
+          </div>
+          <div class="exp-right">
+            <span class="exp-tag">Internship</span>
+            <h3 class="exp-role">Data Science & ML Intern</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> Prodigy InfoTech &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+            <ul class="exp-points">
+              <li>Worked on real-world ML pipelines and data analytics workflows.</li>
+              <li>Implemented predictive models and data visualization solutions.</li>
+              <li>Collaborated with a cross-functional team on AI-driven product features.</li>
+            </ul>
+            <div class="exp-skills">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certifications" id="certifications">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">05 / Certifications</span>
+        <h2 class="section-title">Credentials & <span class="gradient-text">Recognition</span></h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class="fas fa-medal"></i></div>
+          <div class="cert-glow"></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Kaggle</span>
+            <h3 class="cert-name">Certified Machine Learning</h3>
+            <p class="cert-desc">Demonstrated proficiency in ML fundamentals, feature engineering, model validation, and ensemble methods on real-world datasets.</p>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="cert-glow cert-glow-purple"></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Deloitte Australia × Forage</span>
+            <h3 class="cert-name">Data Analytics Virtual Internship</h3>
+            <p class="cert-desc">Completed a virtual internship simulating real client data analytics scenarios, business intelligence, and insight communication with Deloitte's methodology.</p>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Open for collaborations, and research opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <!-- ⬇️ REPLACE with actual email -->
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ritikrupamnanda@gmail.com" target="_blank">
+    ritikrupamnanda@gmail.com
+</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <!-- ⬇️ REPLACE with actual LinkedIn URL -->
+              <a href="https://www.linkedin.com/in/ritik-rupam-nanda-44a85832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-val">linkedin.com/in/your-linkedin</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <!-- ⬇️ REPLACE with actual GitHub URL -->
+              <a href="https://github.com/Ritikrupam" target="_blank" class="contact-val">github.com/your-github</a>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/ritik-rupam-nanda-44a85832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/Ritikrupam" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ritikrupamnanda@gmail.com" target="_blank" class="social-btn"><i class="fab fa-email"></i> Email</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" class="form-input" required />
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" class="form-input" required />
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" class="form-input" required />
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" class="form-input form-textarea" rows="5" required></textarea>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>RRN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/ritik-rupam-nanda-44a85832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Ritikrupam" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ritikrupamnanda@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Ritik Rupam Nanda. Crafted with <span class="heart">♥</span> and a lot of <span class="coffee">☕</span></p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
