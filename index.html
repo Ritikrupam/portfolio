@@ -10,25 +10,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<div class="ai-chat-btn" id="aiBtn">
-    🤖 Ask Ritik AI
+<div class="terminal-launcher" id="terminalBtn">
+  >_
 </div>
 
-<div class="ai-chat-box" id="aiBox">
-    <div class="ai-header">
-        Ritik AI Assistant
+<div class="terminal-modal" id="terminalModal">
+  <div class="terminal-window">
+
+    <div class="terminal-topbar">
+      <span>RitikAI Terminal v1.0</span>
+      <button id="closeTerminal">✕</button>
     </div>
 
-    <div class="ai-messages" id="aiMessages">
-        Hello! Ask me anything about Ritik.
+    <div class="terminal-screen" id="terminalOutput">
+      <div class="line">
+        Welcome to RitikAI Terminal.
+      </div>
+
+      <div class="line">
+        Available commands:
+      </div>
+
+      <div class="line">
+        whoami | projects | skills | resume | contact
+      </div>
     </div>
 
-    <div class="ai-options">
-        <button onclick="askAI('about')">About Ritik</button>
-        <button onclick="askAI('projects')">Projects</button>
-        <button onclick="askAI('skills')">Skills</button>
-        <button onclick="askAI('resume')">Resume</button>
+    <div class="terminal-input-area">
+      <span>> </span>
+      <input type="text" id="terminalInput" placeholder="type command..." />
     </div>
+
+  </div>
 </div>
 <body>
 
