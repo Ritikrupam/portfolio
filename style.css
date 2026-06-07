@@ -1457,3 +1457,55 @@ body:hover .cursor-ring { opacity: 0.6; }
   .about-stats { grid-template-columns: 1fr; }
   .skills-icons-row { gap: 12px; }
 }
+.ai-chat-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#00f0ff;
+    color:black;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    z-index:9999;
+    font-weight:600;
+}
+
+.ai-chat-box{
+    position:fixed;
+    bottom:90px;
+    right:25px;
+    width:320px;
+    background:#0f172a;
+    border:1px solid #00f0ff;
+    border-radius:15px;
+    display:none;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.ai-header{
+    padding:15px;
+    background:#00f0ff;
+    color:black;
+    font-weight:bold;
+}
+
+.ai-messages{
+    padding:15px;
+    min-height:120px;
+    color:white;
+}
+
+.ai-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:15px;
+}
+
+.ai-options button{
+    cursor:pointer;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+}
