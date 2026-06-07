@@ -10,6 +10,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+<div class="ai-chat-btn" id="aiBtn">
+    🤖 Ask Ritik AI
+</div>
+
+<div class="ai-chat-box" id="aiBox">
+    <div class="ai-header">
+        Ritik AI Assistant
+    </div>
+
+    <div class="ai-messages" id="aiMessages">
+        Hello! Ask me anything about Ritik.
+    </div>
+
+    <div class="ai-options">
+        <button onclick="askAI('about')">About Ritik</button>
+        <button onclick="askAI('projects')">Projects</button>
+        <button onclick="askAI('skills')">Skills</button>
+        <button onclick="askAI('resume')">Resume</button>
+    </div>
+</div>
 <body>
 
   <!-- Custom Cursor -->
