@@ -394,34 +394,86 @@ const aiBtn = document.getElementById("aiBtn");
 const aiBox = document.getElementById("aiBox");
 const aiMessages = document.getElementById("aiMessages");
 
-aiBtn.onclick = () => {
-  aiBox.style.display =
-      aiBox.style.display === "block"
-          ? "none"
-          : "block";
+const terminalBtn = document.getElementById('terminalBtn');
+const terminalModal = document.getElementById('terminalModal');
+const closeTerminal = document.getElementById('closeTerminal');
+const terminalInput = document.getElementById('terminalInput');
+const terminalOutput = document.getElementById('terminalOutput');
+
+terminalBtn.onclick = () => {
+  terminalModal.style.display = 'flex';
 };
 
-function askAI(type){
+closeTerminal.onclick = () => {
+  terminalModal.style.display = 'none';
+};
 
-  if(type === "about"){
-    aiMessages.innerHTML =
-        "Ritik Rupam Nanda is an AIML Engineer focused on Machine Learning, Deep Learning, Computer Vision, Research and Full Stack Development.";
+terminalInput.addEventListener('keydown', function(e){
+
+  if(e.key !== 'Enter') return;
+
+  const cmd = terminalInput.value.trim().toLowerCase();
+
+  let result = 'Command not found.';
+
+  if(cmd === 'whoami'){
+    result = `
+Ritik Rupam Nanda
+AIML Engineer
+Deep Learning Enthusiast
+Computer Vision Researcher
+`;
   }
 
-  if(type === "projects"){
-    aiMessages.innerHTML =
-        "Projects:<br><br>• SUKHIFY<br>• DNS Tunneling Detection<br>• DeepLens Deepfake Detection<br>• Disaster Damage Assessment";
+  if(cmd === 'projects'){
+    result = `
+SUKHIFY
+DNS Tunneling Detection
+DeepLens Deepfake Detection
+Disaster Damage Assessment
+Banking Application
+`;
   }
 
-  if(type === "skills"){
-    aiMessages.innerHTML =
-        "Python, Java, React.js, TensorFlow, Deep Learning, Machine Learning, SQL, Computer Vision, NLP and Full Stack Development.";
+  if(cmd === 'skills'){
+    result = `
+Python
+Java
+React.js
+TensorFlow
+Machine Learning
+Deep Learning
+Computer Vision
+SQL
+Spring Boot
+`;
   }
 
-  if(type === "resume"){
-    window.open(
-        'assets/Ritik_s_CV.pdf',
-        '_blank'
-    );
+  if(cmd === 'resume'){
+    window.open('assets/Ritik_s_CV.pdf','_blank');
+    result = 'Opening Resume...';
   }
-}
+
+  if(cmd === 'contact'){
+    result = `
+Email:
+ritikrupamnanda@gmail.com
+
+LinkedIn:
+linkedin.com/in/ritik-rupam-nanda
+`;
+  }
+
+  terminalOutput.innerHTML += `
+        <div class="line">
+            > ${cmd}
+        </div>
+
+        <div class="line">
+            ${result}
+        </div>
+    `;
+
+  terminalInput.value = '';
+  terminalOutput.scrollTop = terminalOutput.scrollHeight;
+});
