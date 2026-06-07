@@ -390,3 +390,38 @@ $$('.project-card, .cert-card, .exp-card').forEach(card => {
 
 console.log('%c✦ Ritik Rupam Nanda | AI/ML Engineer Portfolio', 'color: #00f0ff; font-family: monospace; font-size: 14px; font-weight: bold;');
 console.log('%c Built with raw HTML/CSS/JS — no frameworks, just craft.', 'color: #8892b0; font-family: monospace; font-size: 12px;');
+const aiBtn = document.getElementById("aiBtn");
+const aiBox = document.getElementById("aiBox");
+const aiMessages = document.getElementById("aiMessages");
+
+aiBtn.onclick = () => {
+  aiBox.style.display =
+      aiBox.style.display === "block"
+          ? "none"
+          : "block";
+};
+
+function askAI(type){
+
+  if(type === "about"){
+    aiMessages.innerHTML =
+        "Ritik Rupam Nanda is an AIML Engineer focused on Machine Learning, Deep Learning, Computer Vision, Research and Full Stack Development.";
+  }
+
+  if(type === "projects"){
+    aiMessages.innerHTML =
+        "Projects:<br><br>• SUKHIFY<br>• DNS Tunneling Detection<br>• DeepLens Deepfake Detection<br>• Disaster Damage Assessment";
+  }
+
+  if(type === "skills"){
+    aiMessages.innerHTML =
+        "Python, Java, React.js, TensorFlow, Deep Learning, Machine Learning, SQL, Computer Vision, NLP and Full Stack Development.";
+  }
+
+  if(type === "resume"){
+    window.open(
+        'assets/Ritik_s_CV.pdf',
+        '_blank'
+    );
+  }
+}
