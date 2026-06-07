@@ -363,13 +363,9 @@ heroRevealOrder.forEach((sel, i) => {
 });
 
 /* ========== RESUME BUTTON ========== */
-// ⬇️ REPLACE "your-resume.pdf" with the actual path to your resume file
 $('#resumeBtn')?.addEventListener('click', e => {
   e.preventDefault();
-  const link = document.createElement('a');
-  link.href = 'assets/resume.pdf'; // <-- Change this path
-  link.download = 'Ritik_Rupam_Nanda_Resume.pdf';
-  link.click();
+  window.open('assets/Ritik_s_CV.pdf', '_blank');
 });
 
 /* ========== PARALLAX BLOBS ========== */
