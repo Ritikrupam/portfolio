@@ -1540,3 +1540,37 @@ body:hover .cursor-ring { opacity: 0.6; }
   color:white;
   margin-left:10px;
 }
+
+.github-section{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.github-stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.github-stats img{
+  max-width:500px;
+  width:100%;
+  border-radius:20px;
+  transition:0.3s ease;
+}
+
+.github-stats img:hover{
+  transform:translateY(-8px);
+}
+
+.github-graph{
+  margin-top:30px;
+  text-align:center;
+}
+
+.github-graph img{
+  width:100%;
+  max-width:1000px;
+  border-radius:20px;
+}
