@@ -1574,3 +1574,50 @@ body:hover .cursor-ring { opacity: 0.6; }
   max-width:1000px;
   border-radius:20px;
 }
+.globe-section{
+  padding:120px 0;
+}
+
+.globe-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+#globeViz{
+  width:600px;
+  height:600px;
+}
+
+.focus-cards{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.focus-card{
+  width:320px;
+  padding:20px;
+  border:1px solid rgba(0,255,255,.15);
+  background:rgba(255,255,255,.02);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+}
+
+.focus-card h3{
+  color:#00e5ff;
+  margin-bottom:10px;
+}
+
+.focus-card p{
+  color:#bdbdbd;
+  line-height:1.7;
+}
+#globeViz{
+  width:600px;
+  height:600px;
+  flex-shrink:0;
+  transform: translateX(-550px);
+}
