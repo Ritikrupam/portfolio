@@ -1624,3 +1624,8 @@ body:hover .cursor-ring { opacity: 0.6; }
 .focus-cards{
   margin-left: 30px;
 }
+#globeViz canvas{
+  filter:
+    drop-shadow(0 0 20px rgba(0,229,255,.4))
+    drop-shadow(0 0 60px rgba(138,43,226,.25));
+}
