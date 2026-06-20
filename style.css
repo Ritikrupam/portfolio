@@ -1621,3 +1621,6 @@ body:hover .cursor-ring { opacity: 0.6; }
   flex-shrink:0;
   transform: translateX(-550px);
 }
+.focus-cards{
+  margin-left: 30px;
+}
