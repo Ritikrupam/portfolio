@@ -477,3 +477,25 @@ linkedin.com/in/ritik-rupam-nanda
   terminalInput.value = '';
   terminalOutput.scrollTop = terminalOutput.scrollHeight;
 });
+const globeContainer = document.getElementById('globeViz');
+
+if(globeContainer){
+
+  const globe = Globe()
+  (globeContainer)
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+      .backgroundColor('rgba(0,0,0,0)')
+      .pointsData([
+        {
+          lat: 23.7957,
+          lng: 86.4304,
+          size: 1,
+          color: 'cyan'
+        }
+      ])
+      .pointAltitude(0.1)
+      .pointRadius(1.5);
+
+  globe.controls().autoRotate = true;
+  globe.controls().autoRotateSpeed = 0.5;
+}
